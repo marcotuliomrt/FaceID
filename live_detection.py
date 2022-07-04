@@ -11,6 +11,10 @@ import torch
 import cv2
 
 
+
+PATH_TARGET = "data/target.jpg"
+
+
 # Loads the saves parameters on the defined path
 load_params(NET, "saved_params_0")
 
@@ -30,7 +34,7 @@ def img_format(array):
 
 
 # Selecting a image that is gonna be used to check similarity with the live capture
-PIL_img = Image.open(PATH_ANCHOR+'/0.jpg') # PIL
+PIL_img = Image.open(PATH_TARGET) # PIL
 unform_check_img = np.array(PIL_img) # raw array
 check_img = img_format(unform_check_img) # formated array
 # set the right format to enter the net (a 4 dimensional tensor)
