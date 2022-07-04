@@ -33,11 +33,11 @@ There are modules, like model.py and dataset.py, and scripts, like live_detectio
    
 
 ## References
-Original paper: https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
-Medium article: https://medium.com/sfu-cspmp/do-more-with-less-data-one-shot-learning-with-siamese-neural-networks-760357a2f5cc
+- Original paper: https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
+- Medium article: https://medium.com/sfu-cspmp/do-more-with-less-data-one-shot-learning-with-siamese-neural-networks-760357a2f5cc
 
-Nicholas Renotte: https://www.youtube.com/watch?v=sQpPaW17TwU&list=PLgNJO2hghbmhHuhURAGbe6KWpiYZt0AMH&index=13
-Nicholas Renotte git: https://github.com/nicknochnack/FaceRecognition/blob/main/Facial%20Verification%20with%20a%20Siamese%20Network%20-%20Part%207.ipynb
+- Nicholas Renotte: https://www.youtube.com/watch?v=sQpPaW17TwU&list=PLgNJO2hghbmhHuhURAGbe6KWpiYZt0AMH&index=13
+- Nicholas Renotte git: https://github.com/nicknochnack/FaceRecognition/blob/main/Facial%20Verification%20with%20a%20Siamese%20Network%20-%20Part%207.ipynb
 
-Datahacker.rs https://www.youtube.com/watch?v=9hLcBgnY7cs 
-Datahacker.rs git: https://github.com/maticvl/dataHacker/blob/master/pyTorch/014_siameseNetwork.ipynb
+- Datahacker.rs https://www.youtube.com/watch?v=9hLcBgnY7cs 
+- Datahacker.rs git: https://github.com/maticvl/dataHacker/blob/master/pyTorch/014_siameseNetwork.ipynb
