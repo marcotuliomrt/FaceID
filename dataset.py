@@ -11,9 +11,9 @@ from torchvision import transforms
 # ==================== Variables ======================================================================
 
 # path where the anchor pictures will be saved
-PATH_ANCHOR = "data/anchor2"
+PATH_ANCHOR = "data/anchor"
 # path where the positive images will be saved
-PATH_POS = "data/positive2"
+PATH_POS = "data/positive"
 # path where the negative images will be saved
 PATH_NEG = "data/negative"
 # image size for stardardization 
