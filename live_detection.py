@@ -12,7 +12,7 @@ import cv2
 
 
 # Loads the saves parameters on the defined path
-load_params(NET, "saved_params")
+load_params(NET, "saved_params_0")
 
 
 
