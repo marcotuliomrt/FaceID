@@ -1,5 +1,4 @@
 import cv2 
-PATH_TARGET = "/home/marco/miniconda3/envs/FaceID-env/project_faceid/FaceID"
 
 cap = cv2.VideoCapture(0)
 

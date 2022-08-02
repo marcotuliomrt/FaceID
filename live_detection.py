@@ -1,6 +1,6 @@
 
 
-from dataset import PATH_ANCHOR, IMG_SIZE, transforms
+from dataset import IMG_SIZE, transforms
 from param_ops import load_params
 from model import NET, DEVICE
 import matplotlib.pyplot as plt
@@ -11,19 +11,17 @@ import torch
 import cv2
 
 
-
+# --------------- variables ---------------------------------------------------------------------------------
 PATH_TARGET = "data/targets/target.jpg"
-
-
-# Loads the saves parameters on the defined path
-load_params(NET, "saved_params_0")
-
-
-
 max_dist = 0.9 # Maximum euclidean distance that is gonna be accepted to plot the text on the screen 
 text = "<MARCO>" # text is gonna be ploted
 
 
+# ------------------------------------------------------------------------------------------------------------
+
+
+# Loads the saves parameters from the defined path
+load_params(NET, "saved_params_0")
 
 # formating function used on the real-time test -> both images entering the model must have the exact same transformations (resize, stardization, etc)
 def img_format(array):
