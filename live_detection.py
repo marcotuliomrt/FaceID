@@ -12,7 +12,7 @@ import cv2
 
 
 
-PATH_TARGET = "data/target.jpg"
+PATH_TARGET = "data/targets/target.jpg"
 
 
 # Loads the saves parameters on the defined path
@@ -55,10 +55,6 @@ while cap.isOpened():
     # Cutting down the window size to match the negative dataset
     frame = frame[120:120+250, 200:200+250, :]
     
-    # cv2.imshow('frame', frame)
-    # if cv2.waitKey(1) & 0xFF == ord('1'):
-
-    
 
     NET.eval()
     with torch.no_grad():
@@ -93,7 +89,7 @@ while cap.isOpened():
         cv2.imshow('Input', frame)
 
 
-    if cv2.waitKey(1) & 0xFF == ord('0'):
+    if cv2.waitKey(1) & 0xFF == ord('k'):
         break
 
 
