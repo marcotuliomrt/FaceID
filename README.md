@@ -1,13 +1,13 @@
-## About the project 
+# About the project 
 
-#### How the scripts work
+### How the scripts work
 Action that happens after you run the scripts
 - Train.py:
 It performs the training (alters the parameters during the process) and in the end saves the parameters on a file with the last character being an index of saved parameter files, for example, on the repository there is already a saved_params_0, if you perform a training, in the end of the training process it will create a saved_params_1, and so on
 - live_detection.py:
 It loads the parameters from the saved parameters file, opens a webcam image window and makes the inference on these frames. If a detection is made a string shows on the screen top
 
-#### The siamese network
+### The siamese network
 OBS: A important concept to understand the following explanation is "object class". On this context it means a group of objects which the boundaries are the ones the net was made to differentiate. For example, if the net was designed to differentiate human faces, one object class would be composed by many pictures of faces of the SAME PERSON, and the other object class would be composed by many pictures of faces of DIFFERENT PEOPLE 
 
 The net composed by 2 identical (same structure, parameters, ...) convolutional neural nets that compare the output embeddings between the two nets, and the loss is a "dissimilarity" index that represent how different the outputs are. A large value of dissimilarity means the images are different, a small one means they are similar.
@@ -21,7 +21,7 @@ The data used to train and test is composed by 3 datasets, one for anchor images
 But what fed to the net ON TRAINING process is a pair of images and a label, some pairs composed by one anchor and a positive image and some pairs composed by an anchor and negative image, and the labels indicate is the respective pair is composed the images of the same class or different ones
 
 
-## How to use it
+# How to use it
 There are modules, like model.py and dataset.py, and scripts, like live_detection.py and train.py. Modules are files just used by the scripts, which in fact are responsible for executing functions with defined purposes.
 1. Choose the script for the action you want to execute.
 - Train the model: train.py
@@ -36,7 +36,7 @@ There are modules, like model.py and dataset.py, and scripts, like live_detectio
     - Dissimilarity limit: You can change the maximum value that the model accepts to print the message on the screen after recognition
     - Detection message: the string that is gonna be plotted on the screen when detection happens.
 
-## References
+# References
 - Original paper: https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
 - Medium article: https://medium.com/sfu-cspmp/do-more-with-less-data-one-shot-learning-with-siamese-neural-networks-760357a2f5cc
 
